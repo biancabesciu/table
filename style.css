@@ -1,0 +1,119 @@
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+body {
+    background-color: #a7cbd5;
+}
+
+table {
+    border: 1px solid grey;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*table #tableBody tr:nth-of-type(odd) {*/
+/*background-color: white;*/
+/*}*/
+
+/*table #tableBody tr:nth-of-type(even) {*/
+/*background-color: #f0f0f0;*/
+/*}*/
+
+tr {
+    line-height: 30px;
+    cursor: move;
+}
+
+.odd {
+    background: #ffff;
+}
+
+.even {
+    background: #f0f0f0;
+}
+
+thead {
+    background: #362c36;
+    color: white;
+}
+
+.container {
+    position: absolute;
+}
+
+.addData {
+    position: relative;
+    left: 151%;
+    margin-top: 30px;
+}
+
+.addData label {
+    margin: 20px;
+}
+
+.addData label input {
+    margin: 3px 0 3px 0;
+    border-radius: 5px;
+}
+
+input#pet {
+    position: relative;
+    left: 29px;
+}
+
+input#name {
+    position: relative;
+    left: 11px;
+}
+
+input#color {
+    position: relative;
+    left: 13px;
+}
+
+input#gender {
+    position: relative;
+    left: 2px;
+}
+
+input {
+    line-height: 10px;
+}
+
+.buttons {
+    position: relative;;
+    right: -282%;
+    bottom: 64px;
+}
+
+.buttons input {
+    background-color: #362c36;
+    color: white;
+    width: 84px;
+    height: 33px;
+    border-radius: 8px;
+}
+
+td .btnDelete {
+    float: right;
+}
+
+/*.dropzone {*/
+/*width: 200px;*/
+/*height: 20px;*/
+/*margin-bottom: 10px;*/
+/*padding: 10px;*/
+/*background: cornflowerblue;*/
+/*}*/
+
+.row .over {
+    border: 2px dashed #000;
+    opacity: 0.4;
+}
